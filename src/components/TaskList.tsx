@@ -20,6 +20,7 @@ export function TaskList() {
       const uniqueId = Math.floor(Math.random() * Date.now());
       const newTask = { id: uniqueId, title: newTaskTitle, isComplete: false }
       setTasks([...tasks, newTask]);
+      setNewTaskTitle('');
     }
   }
 
